@@ -166,41 +166,50 @@ h3{
       font-size: 16px;
       font-weight: 400;
     }
-    .price-Serv{
+    .jcf-select{
       position: relative;
+      cursor: pointer;
+      &:before{
+        width: 8px;
+        height: 5px;
+        content: '';
+        position: absolute;
+        top: 11px;
+        right: 9px;
+        background: url('../img/arrow_down_icon_.png') no-repeat 50% 50%;
+        transform: rotate(180deg);
+      }
+    }
+    .jcf-unselectable{
       max-width: 240px;
       margin: 0 auto 30px;
       width: 100%;
-      padding: 10px 12px 2px;
+      padding: 4px 12px;
+      display: block;
       background-color: #e4e9f3;
-      span.open-priceServ{
-        cursor: pointer;
-        position: absolute;
-        top: 12px;
-        right: 10px;
-        width: 10px;
-        height: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-          max-width: 100%;
-          height: auto;
-          margin: 0;
+    }
+    .jcf-select-drop{
+      position: absolute;
+      left: 0;
+      z-index: 2;
+      padding: 0;
+    }
+    .jcf-list-content{
+      ul{
+        li{
+          padding: 2px 12px;
+          cursor: pointer;
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none;   /* Chrome/Safari/Opera */
+          -khtml-user-select: none;    /* Konqueror */
+          -moz-user-select: none;      /* Firefox */
+          -ms-user-select: none;       /* Internet Explorer/Edge */
+          user-select: none;  
+          margin-bottom: 5px;
+          &:hover{
+            background: #9797C1;
+          }
         }
-      }
-      p{
-        color: #222222;
-        font-size: 14px;
-        font-weight: 300;
-        margin-bottom: 10px;
-      }
-      .hiddenP{
-        display: none;
-      }
-      .showp{
-        display: block;
-        z-index: 2;
       }
     }
     .autoreneval{
@@ -363,7 +372,7 @@ h3{
   label{
     color: #9a9a9a;
     font-size: 16px;
-    strong{
+    a{
       color: #54559c;
       font-weight: 400;
       text-decoration: underline;
@@ -381,6 +390,9 @@ h3{
   &:hover{
     background: rgba(#27283c, 0.95);
   }
+}
+.dis-but{
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 768px) {

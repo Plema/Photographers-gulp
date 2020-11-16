@@ -52,7 +52,11 @@ $(document).ready(function () {
   $(window).on('load resize',windowSize);
 
   $('.switch-btn').click(function(){
+
+    $('.switch-btn').removeClass('switch-on');
+
     $(this).toggleClass('switch-on');
+
     if ($(this).hasClass('switch-on')) {
         $(this).trigger('on.switch');
     } else {
@@ -61,13 +65,24 @@ $(document).ready(function () {
   });
 
   $('.delete-card').on('click', function () {
-    $(this).parent().remove()
+    $('html').css('overflow','hidden')
+    $('.background-pop').addClass('open-backg')
+    $('.delete-card-p').addClass('open-popfiin')
+    // $(this).parent().remove();
   });
 
   $('.send-col').on('click', function () {
     $('html').css('overflow','hidden')
     $('.background-pop').addClass('open-backg')
     $('.send-check-pop').addClass('open-popfiin')
+  });
+
+  $('.open-yes-pop').on('click', function (event) {
+    event.preventDefault()
+    $('html').css('overflow','hidden')
+    $('.background-pop').addClass('open-backg')
+    $('.send-check-pop').removeClass('open-popfiin')
+    $('.yes-pop').addClass('open-popfiin')
   });
 
   $('.close').on('click', function () {

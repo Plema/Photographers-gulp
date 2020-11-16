@@ -18,6 +18,7 @@
 
 .pop-up{
   max-width: 480px;
+  padding: 35px 15px;
   width: 80%;
   position: fixed;
   left: 0;
@@ -36,12 +37,45 @@
     margin-bottom: 25px;
     text-align: center;
   }
+  h4{
+    text-align: center;
+    color: #222222;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
   p{
     color: #a2a2a2;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 25px;
     text-align: center;
+  }
+  form{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    button{
+      margin-bottom: 10px;
+      text-align: center;
+      background-color: #54559c;
+      color: #fff;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      height: 41px;
+      padding: 15px;
+      min-width: 140px;
+      &:hover{
+        background: rgba( #54559c, 0.9 );
+      }
+    }
+    .gray{
+      background: #f7f7f7;
+      color: #222222;
+    }
   }
 }
 .send-check-pop{
@@ -50,6 +84,13 @@
     max-width: 340px;
     width: 100%;
     margin: 0 auto;
+  }
+  h4{
+    text-align: center;
+    color: #222222;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 400;
   }
   form{
     display: flex;
@@ -81,6 +122,45 @@
         background: rgba( #54559c, 0.9 );
       }
     }
+  }
+}
+.yes-pop{
+  padding: 35px 15px;
+  h4{
+    text-align: center;
+    color: #222222;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+  form{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    button{
+      margin-bottom: 10px;
+      text-align: center;
+      background-color: #54559c;
+      color: #fff;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      height: 41px;
+      padding: 15px;
+      min-width: 140px;
+      &:hover{
+        background: rgba( #54559c, 0.9 );
+      }
+    }
+  }
+}
+.delete-card{
+  .container-pop{
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 

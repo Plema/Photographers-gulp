@@ -105,23 +105,60 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .profile-menu {
-    width: 18%;
-    margin-top: 13px;
-    ul {
-        li {
-            margin-bottom: 14px;
-
-            a {
-                padding-right: 45px;
-
-                span {
-                    right: 20px;
+    header{
+        .menu-logo {
+            float: left;
+            padding: 0;
+            display: flex;
+            width: calc(100% - 275px);
+    
+            .logo {
+                float: none;
+                order: 1;
+            }
+    
+            nav {
+                &.desktop-mainMenu {
+                    margin-right: 30px;
+                    float: none;
+                    order: 2;
+                }
+            }
+    
+            form {
+                width: 178px;
+                margin-left: 0;
+                float: none;
+                order: 3;
+    
+                &.full {
+                    right: inherit;
+                    left: 50px;
+                    width: calc(100% - 80px);
                 }
             }
         }
     }
-  }
+    .profile-menu {
+        width: 18%;
+        margin-top: 13px;
+        ul {
+            li {
+                margin-bottom: 14px;
+
+                a {
+                    padding-right: 45px;
+
+                    span {
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    header .header-content .menu-logo form {
+        width: 178px;
+    }
 }
 
 @media screen and (min-width: 1188px) {

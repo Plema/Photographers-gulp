@@ -4,9 +4,6 @@ $(document).ready(function () {
     $(this).parent().toggleClass('open-descriptiion')
   });
 
-  $('.open-priceServ').on('click', function () {
-    $(this).parent().find('.hiddenP').toggleClass('showp')
-  });
 
   function windowSize(){
     if ($(window).width() >= '1024'){
@@ -44,6 +41,51 @@ $(document).ready(function () {
     $('html').css('overflow','auto')
     $('.background-pop').removeClass('open-backg')
     $('.pop-up').removeClass('open-popfiin')
+  });
+
+var maxBon = $(".count-bon").text();
+  $("#max-val").attr({
+    "max" : maxBon,        // substitute your own
+    "min" : 0          // values (or variables) here
+  });
+
+
+
+  var customSelect45 = $('.price-Serv1');
+  var customSelect46 = $('.price-Serv2');
+  var customSelect47 = $('.price-Serv6');
+  var customSelect48 = $('.price-Serv3');
+  var customSelect49 = $('.price-Serv4');
+  var customSelect50 = $('.price-Serv5');
+  var customSelect51 = $('.price-Serv7');
+  var customSelect52 = $('.price-Serv9');
+
+  jcf.setOptions('customSelect45', {
+    wrapNative: false,
+    wrapNativeOnMobile: false,
+    fakeDropInBody: false,
+    maxVisibleItems: 4
+  });
+
+  jcf.replace(customSelect45);
+  jcf.replace(customSelect46);
+  jcf.replace(customSelect47);
+  jcf.replace(customSelect48);
+  jcf.replace(customSelect49);
+  jcf.replace(customSelect50);
+  jcf.replace(customSelect51);
+  jcf.replace(customSelect45);
+  jcf.replace(customSelect52);
+
+
+  $('#chack-pay').on('change', function(){
+    if($('#chack-pay').prop('checked')){
+    $('#pay-but').attr('disabled', false);
+    $('#pay-but').removeClass('dis-but');
+  }else{
+    $('#pay-but').attr('disabled', true);
+    $('#pay-but').addClass('dis-but');
+  }
   });
 
 })
