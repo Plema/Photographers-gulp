@@ -147,9 +147,13 @@ h3{
   }
   .left-partServ{
     margin-bottom: 15px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     img{
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       margin: 0 auto 15px;
       display: block;
@@ -307,6 +311,19 @@ h3{
       font-size: 14px;
       margin-bottom: 10px;
     }
+    .red-str{
+      display: none;
+    }
+    .red-block{
+      input{
+        border-color: red;
+        color: red;
+      }
+      .red-str{
+        display: block;
+        color: red;
+      }
+    }
     P{
       color: #9a9a9a;
       font-size: 14px;
@@ -387,12 +404,9 @@ h3{
   max-width: 210px;
   display: block;
   transition: 0.3s;
-  &:hover{
-    background: rgba(#27283c, 0.95);
-  }
 }
 .dis-but{
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 768px) {

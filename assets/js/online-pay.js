@@ -37,7 +37,8 @@ $(document).ready(function () {
     $('.thank-pop').addClass('open-popfiin')
   });
 
-  $('.close').on('click', function () {
+  $('.close').on('click', function (event) {
+    event.preventDefault()
     $('html').css('overflow','auto')
     $('.background-pop').removeClass('open-backg')
     $('.pop-up').removeClass('open-popfiin')
@@ -85,6 +86,16 @@ var maxBon = $(".count-bon").text();
   }else{
     $('#pay-but').attr('disabled', true);
     $('#pay-but').addClass('dis-but');
+  }
+  });
+
+  $('#chack-pay2').on('change', function(){
+    if($('#chack-pay2').prop('checked')){
+    $('#pay-but2').attr('disabled', false);
+    $('#pay-but2').removeClass('dis-but');
+  }else{
+    $('#pay-but2').attr('disabled', true);
+    $('#pay-but2').addClass('dis-but');
   }
   });
 

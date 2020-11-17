@@ -53,7 +53,7 @@ $(document).ready(function () {
 
   $('.switch-btn').click(function(){
 
-    $('.switch-btn').removeClass('switch-on');
+    $('.one-param > .switch-btn').removeClass('switch-on');
 
     $(this).toggleClass('switch-on');
 
@@ -85,7 +85,9 @@ $(document).ready(function () {
     $('.yes-pop').addClass('open-popfiin')
   });
 
-  $('.close').on('click', function () {
+  $('.close').on('click', function (event) {
+    event.preventDefault()
+
     $('html').css('overflow','auto')
     $('.background-pop').removeClass('open-backg')
     $('.pop-up').removeClass('open-popfiin')

@@ -142,6 +142,10 @@ h3{
   }
   .left-partServ{
     margin-bottom: 15px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     .item__img{
       position: relative;
       width: 107px;
@@ -329,6 +333,19 @@ h3{
       font-size: 14px;
       margin-bottom: 10px;
     }
+    .red-str{
+      display: none;
+    }
+    .red-block{
+      input{
+        border-color: red;
+        color: red;
+      }
+      .red-str{
+        display: block;
+        color: red;
+      }
+    }
     P{
       color: #9a9a9a;
       font-size: 14px;
@@ -450,17 +467,14 @@ h3{
 .pay-but{
   margin: 0 auto;
   text-transform: uppercase;
-  background-color: #e4e9f3;
+  background-color: #27283c;
   min-width: 210px;
   max-width: 210px;
   display: block;
   transition: 0.3s;
-  &:hover{
-    background: rgba(#27283c, 0.95);
-  }
 }
 .dis-but{
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 768px) {
