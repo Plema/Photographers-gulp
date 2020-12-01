@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.min.css">
     <link rel="stylesheet" href="../css/fin-cabinet.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
     <link rel="stylesheet" href="../css/profile_menu.min.css">
     <link rel="stylesheet" href="../css/profile-menuFin.min.css">
     <link rel="stylesheet" href="../css/pop-fin-cab.min.css">
@@ -234,13 +235,48 @@
             <p>Мы не смогли списать средства с вашего способа оплаты для рекламного аккаунта, так как на Вашем счету недостаточно средств. Обновите, пожалуйста, Вашу платежную информацию.</p>
             <a href="javascript:void(0)" class="js-item"  data-items="myCards">Обновить платежную информацию</a>
           </div>
-          <div class="background-profile">
-            <p>Профиль заказчика услуг:</p>
-            <a class="right-p">
-              <img src="../img/fin-photo.png" alt="">
-              <h6>Иван Иванов</h6>
-            </a>
+
+        <div class="performer">
+          <div class="performer__heading">
+              <div class="label"><span>Pro</span></div>
+              <div class="performer__heading-avatar">
+                  <a href="profile-expert.html">
+                      <img src="../img/search_page/publication-avatar.png" alt="avatar">
+                  </a>
+              </div>
+              <div class="performer__heading-info">
+                  <a href="profile-expert.html" class="name">Иван Иванов</a>
+                  <p class="profession">Фотограф</p>
+                  <p class="place">Россия, Москва</p>
+                  <p class="price">от 10 000</p>
+              </div>
           </div>
+          <div class="performer__gallery">
+              <div class="performer__gallery-slider">
+                  <div class="performer__gallery-item">
+                      <a data-fancybox="company-gallery1"
+                          href="../img/search_page/specialists-img1.jpg"></a>
+                      <img src="../img/search_page/specialists-img1.jpg" alt="image">
+                  </div>
+                  <div class="performer__gallery-item">
+                      <a data-fancybox="company-gallery1"
+                          href="../img/search_page/specialists-img2.jpg"></a>
+                      <img src="../img/search_page/specialists-img2.jpg" alt="image">
+                  </div>
+                  <div class="performer__gallery-item">
+                      <a data-fancybox="company-gallery1"
+                          href="../img/search_page/specialists-img3.jpg"></a>
+                      <img src="../img/search_page/specialists-img3.jpg" alt="image">
+                  </div>
+                  <div class="performer__gallery-item">
+                      <a data-fancybox="company-gallery1"
+                          href="../img/search_page/specialists-img4.jpg"></a>
+                      <img src="../img/search_page/specialists-img4.jpg" alt="image">
+                  </div>
+              </div>
+          </div>
+        </div>
+
           <div class="one-tovarFin">
             <a href="score-product.html" class="photo-link"><img src="../img/product-for-item.png" alt=""></a>
             <div class="tovar-text">
@@ -254,79 +290,666 @@
             <div><strong class="descript">Описание услуги</strong>
               <strong class="cotTov">Стоимость</strong></div>
           </div>
-          <div class="one-serv">
-            <div class="left-partServ">
-              <img src="../img/pin22.png" alt="">
-              <h4>Закрепить в ТОП</h4>
-              <span class="pauseActive">Пауза</span>
-              <div class="price-Serv">
-                <p class="open-priceServ">1 сутки – 390р.</p>
-              </div>
-              <div class="autoreneval">
-                <p>Автопродление</p>
-                <div class="switch-btn switch-on"></div>
-              </div>
-            </div>
-            <div class="right-part">
-              <div class="description open-descriptiion">
-                <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
-                <p>Услуга “Закрепление в ТОП-е каталога “Проекты”. Проект попадает в VIP-область каталога “Проекты”. Проекты, размещенные в VIP-области каталога “Проекты”, находятся выше проектов, находящихся в обычной области. При активации услуги “Закрепления в ТОП-е каталога “Проекты”, проект закрепляется на первом месте VIP-области каталога. По мере появления новых закреплений других проектов, текущий проект смещается вниз в каталоге, оставаясь при этом в VIP-области каталога “Проекты” на срок оказания услуги.</p>
-              </div>
-              <div class="one-cost">
-                <p>Стоимость</p>
-                <h6>500 руб.</h6>
-              </div>
+
+           <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/pin22.png" alt="">
+            <h4>Закрепить в ТОП</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> – 49р.</p>
             </div>
           </div>
-          <div class="one-serv">
-            <div class="left-partServ">
-              <img src="../img/3-layers.png" alt="">
-              <h4>Закрепить в ТОП</h4>
-              
-              <span class="pauseActive">Пауза</span>
-              <div class="price-Serv">
-                <p  class="open-priceServ">Осталось 5 поднятий</p>
-              </div>
-              <div class="autoreneval">
-                <p>Автопродление</p>
-                <div class="switch-btn switch-on"></div>
-              </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Закрепление заявки в ТОП-е”, благодаря которой заявка попадает в VIP-область списка заявок к проекту на странице проекта. Заявки к проектам, размещенные в VIP-области заявок к проектам, находятся выше заявок, к которым не была применена соответствующая услуга. При активации услуги “Закрепление заявки в ТОП-е”, заявка закрепляется на первом месте списка заявок к проекту. По мере появления новых закреплений других заявок, текущая заявка смещается вниз в списке, оставаясь при этом в VIP-области списка заявок к проекту на срок размещения проекта на сайте.</p>
             </div>
-            <div class="right-part">
-              <div class="description">
-                <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
-                <p>Услуга “Поднятие проекта на первую позицию в каталоге “Проекты” в соответствии с областью, которую занимает проект в каталоге (VIP или обычная область). Если проект до активации услуги поднятия находился в обычной области, он поднимается на первое место в обычной области. Если проект до активации услуги поднятия находился в VIP-области, он поднимается на первое место в VIP-области. Если заказана услуга с более чем одним поднятием, каждое поднятие осуществляется 1 раз в сутки.</p>
-              </div>
-              <div class="one-cost">
-                <p>Стоимость</p>
-                <h6>500 руб.</h6>
-              </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>49 руб.</h6>
             </div>
           </div>
-          <div class="one-serv">
-            <div class="left-partServ">
-              <img src="../img/3-layers2.png" alt="">
-              <h4>Выделить цветом</h4>
-              <span class="pauseActive">Активно</span>
-              <div class="price-Serv">
-                <p  class="open-priceServ">Осталось 5 поднятий</p>
-              </div>
-              <div class="autoreneval">
-                <p>Автопродление</p>
-                <div class="switch-btn switch-on"></div>
-              </div>
-            </div>
-            <div class="right-part">
-              <div class="description">
-                <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
-                <p>Услуга “Выделение проекта в каталоге “Проекты” цветом”, благодаря которой проект в каталоге.</p>
-              </div>
-              <div class="one-cost">
-                <p>Стоимость</p>
-                <h6>500 руб.</h6>
-              </div>
+        </div>
+
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/3-layers2.png" alt="">
+            <h4>Выделить цветом</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> – 29р.</p>
             </div>
           </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Выделение заявки цветом”, благодаря которой заявка к проекту в списке заявок становится более заметной.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>29 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Скрыть персональные данные от других исполнителей</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> – 29р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Скрыть персональные данные от других исполнителей”, благодаря которой ссылка на Ваш профиль, а также Ваши персональные данные, такие как Имя и Фамилия (наименование компании) и аватар будут видны только Заказчику </p>
+                <p>Стоимость услуги – 29р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>29 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Магазин</h4>
+            <select class="price-Serv1" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 мес. – 990р..</option>
+              <option value="3s">3 мес. – 2520р. (скидка 15%)</option>
+              <option value="4s">6 мес. – 4750р. (скидка 20%)</option>
+              <option value="10s">12 мес. – 8310р. (скидка 30%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Опция “Магазин”, благодаря которой пользователь приобретает возможность размещать на сайте до 50 активных товаров на время действия услуги.  </p>
+                <p>Стоимость услуги – 990р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>990 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Супермаркет</h4>
+            <select class="price-Serv2" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 мес. – 1990р.</option>
+              <option value="3s">3 мес. – 5070р. (скидка 15%)</option>
+              <option value="10s">6 мес. – 9550р. (скидка 20%)</option>
+              <option value="4s">12 мес. – 16690р. (скидка 30%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Опция “Супермаркет”, благодаря которой пользователь приобретает возможность размещать на сайте до 150 активных товаров на время действия услуги. </p>
+                <p>Стоимость услуги – 1990р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>1990 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Гипермаркет</h4>
+            <select class="price-Serv3" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 мес. – 2990р.</option>
+              <option value="3s">3 мес. – 7620р. (скидка 15%)</option>
+              <option value="10s">6 мес. – 14350р. (скидка 20%)</option>
+              <option value="4s">12 мес. – 25110р. (скидка 30%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Опция “Гипермаркет”, благодаря которой пользователь приобретает возможность размещать на сайте до 300 активных товаров на время действия услуги. </p>
+                <p>Стоимость услуги – 2990р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>2990 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/pin22.png" alt="">
+            <h4>Сделать VIP</h4>
+            <select class="price-Serv4" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 сутки – 190р.</option>
+              <option value="3s">3 суток – 480р. (скидка 15%)</option>
+              <option value="10s">5 суток – 760р. (скидка 20%)</option>
+              <option value="4s">10 суток – 1330р. (скидка 30%)</option>
+              <option value="4s">20 суток – 2470р. (скидка 35%)</option>
+              <option value="4s">30 суток – 3420р. (скидка 40%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Размещение в VIP-области каталога “Магазин”, благодаря которой товар попадает в VIP-область каталога “Магазин”. Товары, размещенные в VIP-области каталога “Магазин”, занимают не более 6 позиций на каждой странице каталога. В случае, если по применяемым пользователем фильтрам каталога “Магазин” насчитывается более 6 товаров, к которым применена услуга “Размещение в VIP-области каталога “Магазин”, на странице каталога “Магазин” выводится 6 товаров в VIP-области рандомным способом. При этом если к товару применена опция “Размещение в VIP-области каталога “Магазин”, товар также продолжает отображаться в обычной области каталога.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>190 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/3-layers.png" alt="">
+            <h4>Поднять в поиске</h4>
+            <select class="price-Serv5" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 поднятие – 90р.</option>
+              <option value="3s">3 поднятия – 229р. (скидка 15%)</option>
+              <option value="10s">5 поднятий – 360р. (скидка 20%)</option>
+              <option value="4s">10 поднятий – 630р. (скидка 30%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Поднятие товара на первую позицию в каталоге “Магазин”, благодаря которой товар поднимается на первую позицию в обычной области каталога “Магазин”. Если заказана услуга с более чем одним поднятием, каждое поднятие осуществляется 1 раз в сутки.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>90 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/3-layers2.png" alt="">
+            <h4>Выделить цветом</h4>
+            <select class="price-Serv6" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 поднятие – 90р.</option>
+              <option value="3s">3 поднятия – 229р. (скидка 15%)</option>
+              <option value="10s">5 поднятий – 360р. (скидка 20%)</option>
+              <option value="4s">10 поднятий – 630р. (скидка 30%)</option>
+              <option value="4s">20 суток – 1080р. (скидка 40%)</option>
+              <option value="4s">30 суток – 1350р. (скидка 50%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Выделение товара в каталоге “Магазин” цветом”, благодаря которой товар в каталоге “Магазин” становится более заметным.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>90 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/raketa.png" alt="">
+            <h4>Турбо-продвижение</h4>
+            <div class="price-Serv">
+              <p class="open-priceServ">1550р.</p>
+            </div>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Турбо-продвижение”, включающая в себя размещение товара в VIP-области каталога “Магазин” на 7 дней, 7 поднятий товара на первую позицию в обычной области каталога “Магазин” (каждое поднятие осуществляется 1 раз в сутки) и выделение товара в каталоге “Магазин” цветом на 7 дней</p>
+              <p>Стоимость услуги – 1550р. вместо 2590р. (скидка 40%)</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>1550 руб.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Публикация события</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 490р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Публикация события на сайте. Оплачивая размещение события на сайте, вы принимаете Правила публикации событий на сайте и Оферту на оказание рекламных услуг.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/pin22.png" alt="">
+            <h4>Закрепить в ТОП</h4>
+            
+            <select class="price-Serv7" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 сутки – 390р.</option>
+              <option value="3s">3 суток – 1050р. <strong>( скидка 10% )</strong></option>
+              <option value="4s">5 суток – 1560р. <strong>( скидка 20% )</strong></option>
+              <option value="10s">10 суток – 27300р. <strong>( скидка 30% )</strong></option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Закрепление в ТОП-е каталога “События”. Событие попадает в VIP-область каталога “События”. События, размещенные в VIP-области каталога “События”, находятся выше событий, находящихся в обычной области. При активации услуги “Закрепления в ТОП-е каталога “События”, событие закрепляется на первом месте VIP-области каталога. По мере появления новых закреплений других событий, текущее событие смещается вниз в каталоге, оставаясь при этом в VIP-области каталога “События” на срок оказания услуги. </p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>390 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/3-layers2.png" alt="">
+            <h4>Выделить цветом</h4>
+            <select class="price-Serv8" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 сутки – 190р.</option>
+              <option value="3s">3 суток – – 480р. (скидка 15%).</option>
+              <option value="4s">5 суток –    760р. (скидка 20%)</option>
+              <option value="10s">10 суток – 1330р. (скидка 30%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Выделение события в каталоге “События” цветом”, благодаря которой событие в каталоге “События” становится более заметным.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>29 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/raketa.png" alt="">
+            <h4>Турбо продвижение</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 2430р</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Турбо-продвижение”, включающая в себя закрепление события в VIP-области каталога “События” на 7 суток и выделения события в каталоге “События” цветом на 7 дней;</p>
+                <p>Стоимость услуги – 2430р. вместо 4060р. (скидка 40%)</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>1720 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Открыть событие для Специалистов и Организаций со статусом “Pro” и “Top” </h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 490р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Открытие события только для Специалистов и Организаций со статусом “Pro” и “Top”, благодаря которой событие в каталоге “События”, а также карточку события смогут увидеть только Специалисты и Организации со статусом “Pro” и “Top”.
+              </p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Открыть событие для Специалистов и Организаций</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 490р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Открытие события только для Специалистов и Организаций”, благодаря которой событие в каталоге “События”, а также карточку события смогут увидеть только Специалисты и Организации.
+              </p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Скрыть от поисковых систем</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 29р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Скрыть от поисковых систем”, благодаря которой событие в каталоге “События”, а также карточку события смогут увидеть только авторизованные Пользователи;</p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Продление события</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 29р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Пролонгация срока размещения события на сайте. Оплачивая данную услугу, вы принимаете <a href=""> Правила публикации событий</a> на сайте и <a href="">Оферту на оказание рекламных услуг</a></p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+        
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/pin22.png" alt="">
+            <h4>Закрепить в ТОП</h4>
+            
+            <select class="price-Serv9" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 сутки – 390р.</option>
+              <option value="3s">3 суток – 1050р. <strong>( скидка 10% )</strong></option>
+              <option value="4s">5 суток – 1560р. <strong>( скидка 20% )</strong></option>
+              <option value="10s">10 суток – 27300р. <strong>( скидка 30% )</strong></option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Закрепление в ТОП-е каталога “Проекты”. Проект попадает в VIP-область каталога “Проекты”. Проекты, размещенные в VIP-области каталога “Проекты”, находятся выше проектов, находящихся в обычной области. При активации услуги “Закрепления в ТОП-е каталога “Проекты”, проект закрепляется на первом месте VIP-области каталога. По мере появления новых закреплений других проектов, текущий проект смещается вниз в каталоге, оставаясь при этом в VIP-области каталога “Проекты” на срок оказания услуги. </p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>390 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/3-layers.png" alt="">
+            <h4>Поднять в поиске</h4>
+            
+            <select class="price-Serv10" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 поднятие – 190р.</option>
+              <option value="3s">3 поднятия – 480р. (скидка 15%)</option>
+              <option value="4s">5 поднятий – 760р. (скидка 20%)</option>
+              <option value="10s">10 поднятий – 1330р. (скидка 30%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description open-descriptiion">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Поднятие проекта на первую позицию в каталоге “Проекты” в соответствии с областью, которую занимает проект в каталоге (VIP или обычная область). Если проект до активации услуги поднятия находился в обычной области, он поднимается на первое место в обычной области. Если проект до активации услуги поднятия находился в VIP-области, он поднимается на первое место в VIP-области. Если заказана услуга с более чем одним поднятием, каждое поднятие осуществляется 1 раз в сутки.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>190 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/3-layers2.png" alt="">
+            <h4>Выделить цветом</h4>
+            <select class="price-Serv11" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1 сутки – 190р.</option>
+              <option value="3s">3 суток – 480р. (скидка 15%)</option>
+              <option value="4s">5 суток – 760р. (скидка 20%)</option>
+              <option value="10s">10 суток – 1330р. (скидка 30%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Выделение проекта в каталоге “Проекты” цветом”, благодаря которой проект в каталоге “Проекты” становится более заметным.</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>190 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/raketa.png" alt="">
+            <h4>Турбо продвижение</h4>
+            
+            <select class="price-Serv12" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+              <option value="1s">1720р. вместо 3830р. (скидка 55%)</option>
+            </select>
+            <div class="autoreneval">
+              <p>Автопродление</p>
+              <div class="switch-btn switch-on"></div>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Турбо-продвижение”, включающая в себя закрепление проекта в VIP-области каталога “Проекты” на 3 суток, 7 поднятий проекта в каталоге “Проекты” (каждое поднятие осуществляется 1 раз в сутки, первое – через сутки после активации услуги), а также выделение проекта в каталоге “Проекты” цветом на 7 дней.</p>
+                <p>Стоимость услуги – 1720р. вместо 3830р. (скидка 55%)</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>1720 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Открыть проект для Специалистов и Организаций со статусом “Pro” и “Top” </h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 490р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Открытие проекта только для Специалистов и Организаций со статусом “Pro” и “Top”, благодаря которой проект в каталоге “Проекты”, а также карточку проекта смогут увидеть только Специалисты и Организации со статусом “Pro” и “Top”.
+              </p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Открыть проект для Специалистов и Организаций</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 490р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Открытие проекта только для Специалистов и Организаций”, благодаря которой проект в каталоге “Проекты”, а также карточку проекта смогут увидеть только Специалисты и Организации.
+              </p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/glaz.png" alt="">
+            <h4>Скрыть от поисковых систем</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 490р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Услуга “Скрытие от поисковых систем”, благодаря которой проект в каталоге “Проекты”, а также карточку проекта смогут увидеть только авторизованные Пользователи;              </p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+        
+        <div class="one-serv">
+          <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+          <div class="left-partServ">
+            <img src="../img/3-layers2.png" alt="">
+            <h4>Размещение вакансии</h4>
+            <div class="price-Serv">
+              <p  class="open-priceServ"> 490р.</p>
+            </div>
+          </div>
+          <div class="right-part">
+            <div class="description">
+              <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+              <p>Публикация вакансии в каталоге “Проекты” на сайте. Оплачивая размещение вакансии на сайте, вы принимаете <a href="">Правила публикации проектов на сайте</a> и <a href="">Оферту на оказание рекламных услуг</a></p>
+                <p>Стоимость услуги – 490р</p>
+            </div>
+            <div class="one-cost">
+              <p>Стоимость</p>
+              <h6>490 руб.</h6>
+            </div>
+          </div>
+        </div>
+
         </div>
 
         <div class="cabinet_page-content js-content " id="content-myCards">
@@ -449,6 +1072,7 @@
     <script src="../js/slick.min.js"></script>
     <script src="../js/fileinput.min.js"></script>
     <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/profile-messages.min.js"></script>
 

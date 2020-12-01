@@ -59,7 +59,14 @@ var maxBon = $(".count-bon").text();
   var customSelect49 = $('.price-Serv4');
   var customSelect50 = $('.price-Serv5');
   var customSelect51 = $('.price-Serv7');
-  var customSelect52 = $('.price-Serv9');
+  var customSelect52 = $('.price-Serv10');
+  var customSelect53 = $('.price-Serv9');
+  var customSelect54 = $('.price-Serv11');
+  var customSelect55 = $('.price-Serv12');
+  var customSelect56 = $('.price-Serv13');
+  var customSelect57 = $('.price-Serv14');
+  var customSelect58 = $('.price-Serv15');
+  var customSelect59 = $('.price-Serv8');
 
   jcf.setOptions('customSelect45', {
     wrapNative: false,
@@ -77,6 +84,13 @@ var maxBon = $(".count-bon").text();
   jcf.replace(customSelect51);
   jcf.replace(customSelect45);
   jcf.replace(customSelect52);
+  jcf.replace(customSelect53);
+  jcf.replace(customSelect54);
+  jcf.replace(customSelect55);
+  jcf.replace(customSelect56);
+  jcf.replace(customSelect57);
+  jcf.replace(customSelect59);
+  jcf.replace(customSelect58);
 
 
   $('#chack-pay').on('change', function(){
@@ -98,5 +112,18 @@ var maxBon = $(".count-bon").text();
     $('#pay-but2').addClass('dis-but');
   }
   });
+
+
+  function AddSlider() {
+    $('.performer__gallery-slider').slick({
+        infinite: false,
+        slidesToShow: 3,
+        // adaptiveHeight: true,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+    });
+  }
+  AddSlider();
+
 
 })

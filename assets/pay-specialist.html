@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.min.css">
     <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
     <link rel="stylesheet" href="../css/profile-menuFin.min.css">
     <link rel="stylesheet" href="../css/pay-specialist.min.css">
     <link rel="stylesheet" href="../css/pop-pay.min.css">
@@ -64,13 +65,46 @@
         </a>
       </div>
   
-      <div class="one-tovarFin">
-        <a href="profile-expert.html" class="photo-link"><img src="../img/photopay.png" alt=""></a>
-        <div class="tovar-text">
-          <a href="score-product.html">Иван иванов</a>
-          <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично... стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на.....</p>
+      <div class="performer">
+        <div class="performer__heading">
+            <div class="label"><span>Pro</span></div>
+            <div class="performer__heading-avatar">
+                <a href="profile-expert.html">
+                    <img src="../img/search_page/publication-avatar.png" alt="avatar">
+                </a>
+            </div>
+            <div class="performer__heading-info">
+                <a href="profile-expert.html" class="name">Иван Иванов</a>
+                <p class="profession">Фотограф</p>
+                <p class="place">Россия, Москва</p>
+                <p class="price">от 10 000</p>
+            </div>
         </div>
-      </div>
+        <div class="performer__gallery">
+            <div class="performer__gallery-slider">
+                <div class="performer__gallery-item">
+                    <a data-fancybox="company-gallery1"
+                        href="../img/search_page/specialists-img1.jpg"></a>
+                    <img src="../img/search_page/specialists-img1.jpg" alt="image">
+                </div>
+                <div class="performer__gallery-item">
+                    <a data-fancybox="company-gallery1"
+                        href="../img/search_page/specialists-img2.jpg"></a>
+                    <img src="../img/search_page/specialists-img2.jpg" alt="image">
+                </div>
+                <div class="performer__gallery-item">
+                    <a data-fancybox="company-gallery1"
+                        href="../img/search_page/specialists-img3.jpg"></a>
+                    <img src="../img/search_page/specialists-img3.jpg" alt="image">
+                </div>
+                <div class="performer__gallery-item">
+                    <a data-fancybox="company-gallery1"
+                        href="../img/search_page/specialists-img4.jpg"></a>
+                    <img src="../img/search_page/specialists-img4.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
 
       <div class="three-words">
         <strong class="countServ">Услуги (3)</strong>
@@ -87,12 +121,15 @@
           <h4>Статус <span>“Pro”</span></h4>
           
           <select class="price-Serv9" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-            <option value="1s">1 сутки – 390р.</option>
-            <option value="3s">3 суток – 1050р. <strong>( скидка 10% )</strong></option>
-            <option value="4s">5 суток – 1560р. <strong>( скидка 20% )</strong></option>
-            <option value="10s">10 суток – 27300р. <strong>( скидка 30% )</strong></option>
+            <option value="1s">1 мес. – 690р.</option>
+            <option value="3s">3 мес. – 1760р. (скидка 15%)</option>
+            <option value="4s">6 мес. – 3300р. (скидка 20%)</option>
+            <option value="10s">12 мес. – 5790р. (скидка 30%)</option>
           </select>
-
+          <div class="autoreneval">
+            <p>Автопродление</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
         </div>
         <div class="right-part">
           <div class="description open-descriptiion">
@@ -102,7 +139,7 @@
             <p>- возможность добавления на страницу профиля ссылок на социальные сети, мессенджеры и персональный сайт;</p>
             <p>- возможность включения профиля в разделы каталога “Специалисты” одновременно по нескольким городам (до 5 городов помимо основного);</p>
             <p>- возможность размещения профиля в рамках нескольких специализаций в каталоге “Специалисты” (до 2-х дополнительных специализаций);</p>
-            <p>- повышение количества активных проектов до 30, которые Специалист может одновременно размещать на сайте</p>
+            <p>- повышение количества активных проектов до 30, которые Специалист может одновременно размещать на сайте.</p>
           </div>
           <div class="one-cost">
             <p>Стоимость</p>
@@ -110,6 +147,139 @@
           </div>
         </div>
       </div>
+
+
+      <div class="one-serv">
+        <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+        <div class="left-partServ">
+          <div class="item__img">
+            <i class="icon-top"></i>
+          </div>
+          <h4>Статус <span>"TOP"</span></h4>
+          
+          <select class="price-Serv9" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+            <option value="1s">1 мес. – 1190р.</option>
+            <option value="3s">3 мес. – 3030р. (скидка 15%)</option>
+            <option value="4s">6 мес. – 5710р. (скидка 20%)</option>
+            <option value="10s">12 мес. – 9990р. (скидка 30%)</option>
+          </select>
+          <div class="autoreneval">
+            <p>Автопродление</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="description open-descriptiion">
+            <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+            <p>- апгрейд профиля, обеспечивающий его включение в более высокие позиции каталога “Специалисты” за счет умножения рейтинга на коэффициент 2;</p>
+            <p>- возможность улучшения визуального оформления страницы профиля (добавление широкой обложки вместо круглого аватара);</p>
+            <p>- возможность добавления на страницу профиля ссылок на социальные сети, мессенджеры и персональный сайт;</p>
+            <p>- возможность включения профиля в разделы каталога “Специалисты” одновременно по нескольким городам (до 5 городов помимо основного);</p>
+            <p>- возможность размещения профиля в рамках нескольких специализаций в каталоге “Специалисты” (до 2-х дополнительных специализаций);</p>
+            <p>- повышение количества активных проектов до 60, которые Специалист может одновременно размещать на сайте.</p>
+          </div>
+          <div class="one-cost">
+            <p>Стоимость</p>
+            <h6>5000 руб.</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="one-serv">
+        <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+        <div class="left-partServ">
+          <div class="item__img">
+            <i class="icon-top"></i>
+          </div>
+          <h4>Опция <span>"Магазин"</span></h4>
+          
+          <select class="price-Serv9" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+            <option value="1s">1 мес. – 990р.</option>
+            <option value="3s">3 мес. – 2520р. (скидка 15%)</option>
+            <option value="4s">6 мес. – 4750р. (скидка 20%)</option>
+            <option value="10s">12 мес. – 8310р. (скидка 30%)</option>
+          </select>
+          <div class="autoreneval">
+            <p>Автопродление</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="description open-descriptiion">
+            <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+            <p>Услуга “Опция “Магазин”, благодаря которой пользователь приобретает возможность размещать на сайте до 50 активных товаров на время действия услуги. </p>
+          </div>
+          <div class="one-cost">
+            <p>Стоимость</p>
+            <h6>990 руб.</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="one-serv">
+        <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+        <div class="left-partServ">
+          <div class="item__img">
+            <i class="icon-top"></i>
+          </div>
+          <h4>Опция <span>"Супермаркет"</span></h4>
+          
+          <select class="price-Serv9" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+            <option value="1s">1 мес. – 1990р.</option>
+            <option value="3s">3 мес. – 5070р. (скидка 15%)</option>
+            <option value="4s">6 мес. – 9550р. (скидка 20%)</option>
+            <option value="10s">12 мес. – 16690р. (скидка 30%)</option>
+          </select>
+          <div class="autoreneval">
+            <p>Автопродление</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="description open-descriptiion">
+            <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+            <p>Услуга “Опция “Супермаркет”, благодаря которой пользователь приобретает возможность размещать на сайте до 150 активных товаров на время действия услуги.  </p>
+          </div>
+          <div class="one-cost">
+            <p>Стоимость</p>
+            <h6>1990 руб.</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="one-serv">
+        <div class="delete-serv"><img src="../img/х_.png" alt=""></div>
+        <div class="left-partServ">
+          <div class="item__img">
+            <i class="icon-top"></i>
+          </div>
+          <h4>Опция <span>"Гипермаркет"</span></h4>
+          
+          <select class="price-Serv9" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+            <option value="1s">1 мес. – 2990р.</option>
+            <option value="3s">3 мес. – 7620р. (скидка 15%)</option>
+            <option value="4s">6 мес. – 14350р. (скидка 20%)</option>
+            <option value="10s">12 мес. – 25110р. (скидка 30%)</option>
+          </select>
+          <div class="autoreneval">
+            <p>Автопродление</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="description open-descriptiion">
+            <h5><span>Описание услуги</span> <img src="../img/arrow1_.png" alt=""></h5>
+            <p>Услуга “Опция “Гипермаркет”, благодаря которой пользователь приобретает возможность размещать на сайте до 300 активных товаров на время действия услуги. </p>
+          </div>
+          <div class="one-cost">
+            <p>Стоимость</p>
+            <h6>2990 руб.</h6>
+          </div>
+        </div>
+      </div>
+
+
+
       <form action="">
         <div class="param-pay">
             <div class="left-param">
