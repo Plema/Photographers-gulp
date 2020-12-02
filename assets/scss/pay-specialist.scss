@@ -262,6 +262,12 @@ h3{
     padding: 0 15px;
   }
 }
+.next i{
+  transform: translate(-50%, 100%);
+}
+.prev i{
+  transform: translate(-50%, 100%);
+}
 .one-serv{
   padding: 0 0 30px;
   margin: 0 15px 30px;
@@ -658,6 +664,12 @@ h3{
             }
         }
     }
+}
+.next i{
+  transform: translate(-50%, -50%);
+}
+.prev i{
+  transform: translate(-50%, -50%);
 }
   .bread-crumbs {
     padding: 25px 0 9px;
